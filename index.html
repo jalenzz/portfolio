@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="https://royce2003.top/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Royce 的小窝</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="wrap">
+	  <a href="https://royce2003.top" class="hb">
+	    <div class="c">
+	      <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/01.webp" alt=""/>
+	      <div class="txt">
+	        <h1>主页</h1>
+	        <p>今天也是开心的一天</p>
+	      </div>
+	    </div>
+	  </a>
+	  <div class="fullBg">
+	    <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/01.webp" alt=""/>
+	  </div>
+	  <a href="#" class="hb">
+	    <div class="c">
+	      <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/02.webp" alt=""/>
+	      <div class="txt">
+	        <h1>文章归档</h1>
+	        <p>记下即将逝去的青春，留下即将过去的幸福</p>
+	      </div>
+	    </div>
+	  </a>
+	  <div class="fullBg">
+	    <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/02.webp" alt=""/>
+	  </div>
+	  <a href="#" class="hb">
+	    <div class="c">
+	      <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/03.webp" alt=""/>
+	      <div class="txt">
+	        <h1>留言板</h1>
+	        <p>快来留下你的脚印</p>
+	      </div>
+	    </div>
+	  </a>
+	  <div class="fullBg">
+	    <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/03.webp" alt=""/>
+	  </div>
+	  <a href="#" class="hb">
+	    <div class="c">
+	      <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/04.webp" alt=""/>
+	      <div class="txt">
+	        <h1>关于我</h1>
+	        <p>时代的尘埃落在个人身上就是一座大山</p>
+	      </div>
+	    </div>
+	  </a>
+	  <div class="fullBg">
+	    <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/04.webp" alt=""/>
+	  </div>
+	</div>
+	
+	<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  var docWidth = $('body').width(),
+		      $wrap = $('#wrap'),
+		      $images = $('#wrap .hb'),
+		      slidesWidth = $wrap.width();
+		  $(window).on('resize', function(){
+		    docWidth = $('body').width();
+		    slidesWidth = $wrap.width();
+		  })
+		  $(document).mousemove(function(e) {
+		    var mouseX = e.pageX,
+		        offset = mouseX / docWidth * slidesWidth - mouseX / 2;
+		    $images.css({
+		      '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+		              'transform': 'translate3d(' + -offset + 'px,0,0)'
+		    });
+		  });
+		})
+	</script>
+</body>
+</html>
