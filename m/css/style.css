@@ -20,7 +20,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -98,10 +97,10 @@ Menu trigger
   height: 52px;
   width: 52px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transition: background 0.2s;
-  -moz-transition: background 0.2s;
-  transition: background 0.2s;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-transition: background .2s;
+  -moz-transition: background .2s;
+  transition: background .2s;
 }
 .cd-nav-trigger .cd-icon,
 .cd-nav-trigger .cd-icon::before,
@@ -136,9 +135,9 @@ Menu trigger
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
-  -moz-transition: -moz-transform 0.3s, background-color 0.3s;
-  transition: transform 0.3s, background-color 0.3s;
+  -webkit-transition: -webkit-transform .3s, background-color .3s;
+  -moz-transition: -moz-transform .3s, background-color .3s;
+  transition: transform .3s, background-color .3s;
 }
 .cd-nav-trigger .cd-icon::before, .cd-nav-trigger .cd-icon::after {
   /* upper and lower lines of the menu icon */
@@ -147,9 +146,9 @@ Menu trigger
   right: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  transition: transform .3s;
 }
 .cd-nav-trigger .cd-icon::before {
   -webkit-transform: translateY(-6px);
@@ -165,26 +164,15 @@ Menu trigger
   -o-transform: translateY(6px);
   transform: translateY(6px);
 }
-.cd-nav-trigger.project-open .cd-icon {
-  /* user selects a projects - transform the icon into a 'X' */
-  background-color: rgba(255, 255, 255, 0);
-}
-.cd-nav-trigger.project-open .cd-icon::before, .cd-nav-trigger.project-open .cd-icon::after {
-  background-color: white;
-}
-.cd-nav-trigger.project-open .cd-icon::before {
-  -webkit-transform: translateY(0) rotate(45deg);
-  -moz-transform: translateY(0) rotate(45deg);
-  -ms-transform: translateY(0) rotate(45deg);
-  -o-transform: translateY(0) rotate(45deg);
-  transform: translateY(0) rotate(45deg);
-}
-.cd-nav-trigger.project-open .cd-icon::after {
-  -webkit-transform: translateY(0) rotate(-45deg);
-  -moz-transform: translateY(0) rotate(-45deg);
-  -ms-transform: translateY(0) rotate(-45deg);
-  -o-transform: translateY(0) rotate(-45deg);
-  transform: translateY(0) rotate(-45deg);
+.cd-nav-trigger.project-open {
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  transition: transform 1s;
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
 }
 .cd-nav-trigger.nav-visible .cd-icon {
   /* user opens the navigation - transform the icon into an arrow */
@@ -195,18 +183,18 @@ Menu trigger
   transform: translateY(-50%) translateX(-50%);
 }
 .cd-nav-trigger.nav-visible .cd-icon::after {
-  -webkit-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(0.5);
-  -moz-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(0.5);
-  -ms-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(0.5);
-  -o-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(0.5);
-  transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(0.5);
+  -webkit-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(.5);
+  -moz-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(.5);
+  -ms-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(.5);
+  -o-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(.5);
+  transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(.5);
 }
 .cd-nav-trigger.nav-visible .cd-icon::before {
-  -webkit-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(0.5);
-  -moz-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(0.5);
-  -ms-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(0.5);
-  -o-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(0.5);
-  transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(0.5);
+  -webkit-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(.5);
+  -moz-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(.5);
+  -ms-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(.5);
+  -o-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(.5);
+  transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(.5);
 }
 @media only screen and (min-width: 1024px) {
   .cd-nav-trigger.nav-visible .cd-icon {
@@ -217,18 +205,18 @@ Menu trigger
     transform: translateY(-50%) translateX(-50%) rotate(-90deg);
   }
   .cd-nav-trigger.nav-visible .cd-icon::after {
-    -webkit-transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(0.5);
-    -moz-transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(0.5);
-    -ms-transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(0.5);
-    -o-transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(0.5);
-    transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(0.5);
+    -webkit-transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(.5);
+    -moz-transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(.5);
+    -ms-transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(.5);
+    -o-transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(.5);
+    transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(.5);
   }
   .cd-nav-trigger.nav-visible .cd-icon::before {
-    -webkit-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
-    -moz-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
-    -ms-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
-    -o-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
-    transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
+    -webkit-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(.5);
+    -moz-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(.5);
+    -ms-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(.5);
+    -o-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(.5);
+    transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(.5);
   }
 }
 
@@ -265,9 +253,9 @@ Projects
   height: 25%;
   width: 100%;
   overflow: hidden;
-  -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform .5s;
+  -moz-transition: -moz-transform .5s;
+  transition: transform .5s;
   /* Force Hardware Acceleration */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -307,9 +295,9 @@ Projects
   -o-transform: translateY(0%);
   transform: translateY(0%);
   opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  transition: opacity .5s;
 }
 .cd-projects-previews li:nth-of-type(2) a {
   -webkit-transform: translateY(-25%);
@@ -398,9 +386,9 @@ Projects
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  transition: opacity .3s;
 }
 .cd-projects > li.selected {
   z-index: 1;
@@ -450,9 +438,9 @@ Projects
   -ms-transform: translateY(-37.5vh);
   -o-transform: translateY(-37.5vh);
   transform: translateY(-37.5vh);
-  -webkit-transition: -webkit-transform 0.6s 0.2s;
-  -moz-transition: -moz-transform 0.6s 0.2s;
-  transition: transform 0.6s 0.2s;
+  -webkit-transition: -webkit-transform .6s .2s;
+  -moz-transition: -moz-transform .6s .2s;
+  transition: transform .6s .2s;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -471,9 +459,9 @@ Projects
   -ms-transform: translateX(-50%) scale(0);
   -o-transform: translateX(-50%) scale(0);
   transform: translateX(-50%) scale(0);
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  transition: transform .3s;
 }
 .no-touch .cd-projects-previews a:hover .cd-project-title::after {
   -webkit-transform: translateX(-50%) scale(1);
@@ -488,9 +476,9 @@ Projects
   -ms-transform: translateX(-50%) scale(1);
   -o-transform: translateX(-50%) scale(1);
   transform: translateX(-50%) scale(1);
-  -webkit-transition: -webkit-transform 0.3s 0.3s;
-  -moz-transition: -moz-transform 0.3s 0.3s;
-  transition: transform 0.3s 0.3s;
+  -webkit-transition: -webkit-transform .3s .3s;
+  -moz-transition: -moz-transform .3s .3s;
+  transition: transform .3s .3s;
 }
 .cd-project-title h2 {
   font-size: 3rem;
@@ -596,9 +584,9 @@ li.selected .cd-project-title,
 }
 
 .cd-projects li.selected .cd-project-title::after {
-  -webkit-transition: -webkit-transform 0.3s 0s;
-  -moz-transition: -moz-transform 0.3s 0s;
-  transition: transform 0.3s 0s;
+  -webkit-transition: -webkit-transform .3s 0s;
+  -moz-transition: -moz-transform .3s 0s;
+  transition: transform .3s 0s;
   -webkit-transform: translateX(-50%) scale(0);
   -moz-transform: translateX(-50%) scale(0);
   -ms-transform: translateX(-50%) scale(0);
@@ -627,9 +615,9 @@ li.selected .cd-project-title,
   overflow: auto;
   text-align: center;
   opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  transition: opacity 0.6s;
+  -webkit-transition: opacity .6s;
+  -moz-transition: opacity .6s;
+  transition: opacity .6s;
   /* vertically align its content */
   display: table;
 }
@@ -642,9 +630,9 @@ li.selected .cd-project-title,
   display: inline-block;
   padding: .4em 1em;
   border-radius: 4px;
-  -webkit-transition: background 0.2s;
-  -moz-transition: background 0.2s;
-  transition: background 0.2s;
+  -webkit-transition: background .2s;
+  -moz-transition: background .2s;
+  transition: background .2s;
   color: #ffffff;
   font-family: "Merriweather", serif;
   font-size: 2.4rem;
@@ -657,11 +645,11 @@ li.selected .cd-project-title,
 }
 .cd-primary-nav .cd-label {
   position: relative;
-  margin: 2.4em 0 2em;
+  margin: 0 0 2em;
   color: #a8ae7e;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 3rem;
   letter-spacing: 1px;
 }
 .cd-primary-nav .cd-label::after {
