@@ -185,11 +185,10 @@ jQuery(document).ready(function($){
 	};
 })(jQuery);
 
-function sleep (time) {
-  return new Promise((resolve) => setTimeout(resolve, time));
-}
 function jump(url) {
-	sleep(1000).then(() => {
-		$(location).attr('href', 'https://royce2003.top/' + url);
-	})
+	new Promise(function (resolve) {
+	  return setTimeout(resolve, 1000);
+	}).then(function () {
+	  $(location).attr('href', 'https://royce2003.top/' + url);
+	});
 }
