@@ -15,11 +15,9 @@ html {
   overflow: hidden;
   height: 100%;
   font-size: 16px;
-  font-family: Montserrat, sans-serif;
+  font-family:'SourceHanSerif-206564f5a921a92', 'SourceHanSerif-2065694c2421a92';
   color: #fff;
-  background: #bbd2c5;
-  background: -webkit-linear-gradient(to right, #292e49, #536976, #bbd2c5);
-  background: linear-gradient(to right, #292e49, #536976, #bbd2c5);
+  background: #0000006e;
 }
 #wrap {
   position: absolute;

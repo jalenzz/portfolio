@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <script type="text/javascript">
-        (function() {
+        (function () {
             var sUserAgent = navigator.userAgent.toLowerCase(),
                 bIsIpad = sUserAgent.match(/ipad/i) == "ipad",
                 bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os",
@@ -15,22 +15,24 @@
                 bIsCE = sUserAgent.match(/windows ce/i) == "windows ce",
                 bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
             if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-                window.location.href="m/";
+                window.location.href = "m/";
             }
-        })(); 
+        })();
     </script>
     <link rel="icon" type="image/x-icon" href="https://royce2003.top/img/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Royce 的小窝</title>
+    <link href='http://cdn.repository.webfont.com/webfonts/nomal/137874/47755/5ea7fee4f629d80d5ce25642.css' rel='stylesheet' type='text/css' media="print" onload='this.media="all"' />
+    <link href='http://cdn.repository.webfont.com/webfonts/nomal/137874/47751/5ea80001f629d80d5ce25644.css' rel='stylesheet' type='text/css' media="print" onload='this.media="all"' />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <div id="wrap">
-        <a href="https://royce2003.top" class="hb">
+        <a href="https://royce2003.top/" class="hb">
             <div class="c">
-                <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/01.webp" />
+                <img src="https://rmt.dogedoge.com/fetch/royce/storage/test/1.png?fmt=webp" />
                 <div class="txt">
                     <h1>主页</h1>
                     <p>今天也是开心的一天</p>
@@ -38,11 +40,11 @@
             </div>
         </a>
         <div class="fullBg">
-            <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/01.webp" />
+            <img src="https://rmt.dogedoge.com/fetch/royce/storage/test/1.png?fmt=webp" />
         </div>
-        <a href="https://royce2003.top/archives" class="hb">
+        <a href="https://royce2003.top/archives/" class="hb">
             <div class="c">
-                <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/02.webp" />
+                <img src="https://rmt.dogedoge.com/fetch/royce/storage/test/2.png?fmt=webp" />
                 <div class="txt">
                     <h1>文章归档</h1>
                     <p>记下即将逝去的青春，留下即将过去的幸福</p>
@@ -50,11 +52,11 @@
             </div>
         </a>
         <div class="fullBg">
-            <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/02.webp" />
+            <img src="https://rmt.dogedoge.com/fetch/royce/storage/test/2.png?fmt=webp" />
         </div>
-        <a href="https://royce2003.top/messageboard" class="hb">
+        <a href="https://royce2003.top/messageboard/" class="hb">
             <div class="c">
-                <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/03.webp" />
+                <img src="https://rmt.dogedoge.com/fetch/royce/storage/test/3.png?fmt=webp" />
                 <div class="txt">
                     <h1>留言板</h1>
                     <p>快来留下你的脚印</p>
@@ -62,11 +64,11 @@
             </div>
         </a>
         <div class="fullBg">
-            <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/03.webp" />
+            <img src="https://rmt.dogedoge.com/fetch/royce/storage/test/3.png?fmt=webp" />
         </div>
-        <a href="https://royce2003.top/about" class="hb">
+        <a href="https://royce2003.top/about/" class="hb">
             <div class="c">
-                <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/04.webp" />
+                <img src="https://rmt.dogedoge.com/fetch/royce/storage/test/4.png?fmt=webp" />
                 <div class="txt">
                     <h1>关于我</h1>
                     <p>时代的尘埃落在个人身上就是一座大山</p>
@@ -74,22 +76,24 @@
             </div>
         </a>
         <div class="fullBg">
-            <img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/04.webp" />
+            <img src="https://rmt.dogedoge.com/fetch/royce/storage/test/4.png?fmt=webp" />
         </div>
     </div>
-    <a href="https://myssl.com/seal/detail?domain=royce2003.top"><img src="https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/homepage/myssl.webp" style="position:fixed;right:0;bottom:0;width:3.4375rem;z-index:99;"></a>
+    <a href="https://myssl.com/seal/detail?domain=royce2003.top"><img
+            src="https://rmt.dogedoge.com/fetch/royce/storage/test/myssl.png?fmt=webp&w=70"
+            style="position:fixed;right:0;bottom:0;width:3.4375rem;z-index:99;"></a>
     <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             var docWidth = $('body').width(),
                 $wrap = $('#wrap'),
                 $images = $('#wrap .hb'),
                 slidesWidth = $wrap.width();
-            $(window).on('resize', function() {
+            $(window).on('resize', function () {
                 docWidth = $('body').width();
                 slidesWidth = $wrap.width();
             })
-            $(document).mousemove(function(e) {
+            $(document).mousemove(function (e) {
                 var mouseX = e.pageX,
                     offset = mouseX / docWidth * slidesWidth - mouseX / 2;
                 $images.css({
@@ -102,3 +106,4 @@
 </body>
 
 </html>
+<!-- base on http://www.htmleaf.com/jQuery/Layout-Interface/201901175498.html -->
