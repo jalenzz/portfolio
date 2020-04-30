@@ -708,7 +708,7 @@ JavaScript Disabled
 }
 .beian-icp {
   position: absolute;
-  bottom: -15px;
+  bottom: 5px;
   width: 100%;
   text-align: center;
   z-index: 99;
