@@ -61,7 +61,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family:'SourceHanSerif-206564f5a921a92', 'SourceHanSerif-2065694c2421a92';
+  font-family:'SourceHanSerif-206564f5a921a92', 'SourceHanSerif-206deebc8721a92'; /* Bold, Medium */
   color: #ffffff;
   background-color: #262423;
 }
@@ -705,4 +705,10 @@ JavaScript Disabled
 }
 .no-js .cd-primary-nav li:not(.cd-label) {
   display: inline-block;
+}
+.beian-icp {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }

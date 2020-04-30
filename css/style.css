@@ -15,7 +15,7 @@ html {
   overflow: hidden;
   height: 100%;
   font-size: 16px;
-  font-family:'SourceHanSerif-206564f5a921a92', 'SourceHanSerif-2065694c2421a92';
+  font-family:'SourceHanSerif-206564f5a921a92', 'SourceHanSerif-206deebc8721a92'; /* Bold, Medium */
   color: #fff;
   background: #0000006e;
 }
@@ -107,4 +107,10 @@ h1 {
 .credits:hover {
   text-decoration: underline;
   opacity: 1;
+}
+.beian-icp {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
