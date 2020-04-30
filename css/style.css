@@ -109,7 +109,7 @@ h1 {
   opacity: 1;
 }
 .beian-icp {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;

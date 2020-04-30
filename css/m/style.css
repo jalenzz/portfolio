@@ -707,8 +707,9 @@ JavaScript Disabled
   display: inline-block;
 }
 .beian-icp {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: -15px;
   width: 100%;
   text-align: center;
+  z-index: 99;
 }
