@@ -1,4 +1,4 @@
-name: Upload to COS
+name: Deploy
 
 on:
   push:
@@ -10,26 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v2
-        with:
-          ref: master
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
 
-      - uses: actions/setup-python@v1
-        with:
-          python-version: '3.x'
-          architecture: 'x64'
+    - name: Setup
+      run: npm install
 
-      - name: Install coscmd
-        run: sudo pip install coscmd
+    - name: build
+      run: npm run build
 
-      - name: Configure coscmd
-        env:
-          SECRET_ID: ${{ secrets.SECRET_ID }}
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
-          BUCKET: ${{ secrets.BUCKET }}
-          REGION: ${{ secrets.REGION }}
-        run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+    - name: lint
+      run: npm run lint
 
-      - name: Upload
-        run: coscmd upload -rs ./ / --ignore *.md,./.git/*
+    - name: Deploy static to Tencent CloudBase
+      id: deployStatic
+      uses: TencentCloudBase/cloudbase-action@v1
+      with:
+        secretId: ${{ secrets.SECRET_ID }}
+        secretKey: ${{ secrets.SECRET_KEY }}
+        envId: ${{ secrets.ENV_ID }}
+        staticSrcPath: dist
