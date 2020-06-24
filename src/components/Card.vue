@@ -54,6 +54,9 @@ export default {
   -webkit-box-shadow: 0px 10px 40px -10px var(--color-hover);
   -moz-box-shadow: 0px 10px 40px -10px var(--color-hover);
   box-shadow: 0px 10px 40px -10px var(--color-hover);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 #icon {

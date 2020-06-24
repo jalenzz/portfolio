@@ -72,6 +72,10 @@ export default {
 </script>
 
 <style scoped>
+svg {
+  margin-top: 4px;
+}
+
 h3 {
   font-weight: 700;
   font-size: 18px;
@@ -81,6 +85,7 @@ h3 {
 
 h3 a {
   color: #000000;
+  font-family: 'Roboto Slab';
 }
 
 h3 a:hover {

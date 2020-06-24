@@ -7,28 +7,28 @@
     <p>Student /  OIer</p>
 
     <hr id="top-hr" />
-    <h3>🎉 Where to find me:</h3>
+    <h3>🔍 Where to find me:</h3>
     <div id="card-container">
       <Card
-        msg="博客 Blog"
-        backgroundColor="#ff8a0f"
-        description="📘 主站，啥都写"
+        msg="Blog"
+        backgroundColor="#ca2c2a"
+        description="📘 My personal blog"
         textColor="#FFFFFF"
         icon="tcb.png"
         link="https://royce2003.top"
       />
-      <Card
-        msg="更简约的博客"
+      <!-- <Card
+        msg="Blog2"
         backgroundColor="#ca2c2a"
-        description="📒 文章不一定和主站同步"
+        description="📒 without decoration"
         textColor="#FFFFFF"
         icon="tcb.png"
         link="https://blog.royce2003.top"
-      />
+      /> -->
       <Card
         msg="GitHub"
         backgroundColor="#24292E"
-        description="📦 我的一些仓库"
+        description="📦 My repositories"
         textColor="#FFFFFF"
         icon="github.png"
         link="https://github.com/royce003"
@@ -50,5 +50,9 @@ export default {
 <style lang="css" scoped>
 #copyright:hover {
   border: none;
+}
+
+#card-container a:hover {
+  text-decoration: none;
 }
 </style>

@@ -30,7 +30,7 @@
       </template>
     </vue-navigation-bar>
 
-    <transition enter-active-class="animation-fade-in">
+    <transition name="fade" mode="out-in">
       <router-view />
     </transition>
 
@@ -60,7 +60,7 @@ export default {
         menuOptionsRight: [
           {
             type: 'button',
-            text: '🔍 FOLLOW ME ON GITHUB',
+            text: '🌟 FOLLOW ME ON GITHUB',
             path: 'https://github.com/royce003',
             class: 'button-github',
           },
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.dogedoge.com/css2?family=Sriracha&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+@import url('https://fonts.dogedoge.com/css2?family=Roboto+Slab:wght@700&family=Sriracha&family=Noto+Sans+SC:wght@400&display=swap');
 
 .particles {
   position: absolute;
@@ -92,6 +92,10 @@ export default {
   font-family: Sriracha, 'Noto Serif SC', serif, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
   Arial, pingfang sc, source han sans sc, noto sans cjk sc, sarasa gothic sc,
   microsoft yahei, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab';
 }
 
 html,
@@ -129,7 +133,8 @@ body {
 
 #main-navbar,
 #main-navbar .link a {
-  font-weight: 400;
+  font-weight: 700;
+  font-family: 'Roboto Slab';
 }
 
 #main-navbar .button-github {
@@ -138,6 +143,7 @@ body {
   border: 1.5px solid #0070F3;
   /* border-radius: 50px; */
   transition: 0.3s;
+  font-family: 'Roboto Slab';
 }
 
 #main-navbar .button-github:hover {
@@ -238,7 +244,7 @@ span {
 }
 
 .container a:hover {
-  border-bottom: #0070F3 solid 1px;
+  text-decoration: underline;
 }
 
 #others {
@@ -262,33 +268,15 @@ span {
   color: #ffffff;
 }
 
-/**
- * ----------------------------------------
- * animation fade-in-bottom
- * ----------------------------------------
- */
-@-webkit-keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
 }
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>

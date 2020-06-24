@@ -2,32 +2,31 @@
   <div class="container">
     <h1>📩</h1>
     <h1>Subscribe</h1>
-    <p>如何订阅我的文章？</p>
 
     <hr id="top-hr" />
     <div class="article">
-      <p>Big brother drink Coca Cola 🍻</p>
 
-      <h2>如何订阅我的博客？</h2>
+      <h2>How to subscribe to my blog?</h2>
       <p>
-        我的博客目前使用 Hexo 搭建与编译，部署于 Tencent CloudBase。我提供了 RSS
-        订阅链接，可以直接订阅我的个人博客啦~
+        My blog is powerd by Hexo and deployed on Tencent CloudBase. I have provided a link to RSS feeds.
       </p>
       <AppCard
-        msg="博客"
+        msg="Blog"
         stars="⭐⭐⭐⭐⭐"
-        description="利用 RSS 订阅我的博客更新"
+        description="Subscribe my blog by RSS"
         icon="bulb.png"
-        link1Tooltip="我的博客地址"
-        link2Tooltip="我的博客 RSS 订阅链接"
+        link1Tooltip="Link of my blog"
+        link2Tooltip="Link of the RSS"
         link1="https://royce2003.top/"
         link2="https://royce2003.top/atom.xml"
         rightIcon1="bookmark.png"
         rightIcon2="rss-blue.png"
       />
 
-      <h2>最后，感谢。</h2>
-      <p>感谢大哥的关注！您的支持是我更新的最大动力。ღ( ´･ᴗ･` )比心</p>
+      <h2>End</h2>
+      <p>Thank you for your attention! Your support is my biggest motivation for updating.</p>
+      <p>Big brother drink Coca Cola. 🍻</p>
+
     </div>
   </div>
 </template>
