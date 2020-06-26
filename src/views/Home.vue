@@ -11,10 +11,10 @@
     <div id="card-container">
       <Card
         msg="Blog"
-        backgroundColor="#ca2c2a"
+        backgroundColor="#ff8a0f"
         description="📘 My personal blog"
         textColor="#FFFFFF"
-        icon="tcb.png"
+        icon="tcb.svg"
         link="https://royce2003.top"
       />
       <!-- <Card
@@ -22,7 +22,7 @@
         backgroundColor="#ca2c2a"
         description="📒 without decoration"
         textColor="#FFFFFF"
-        icon="tcb.png"
+        icon="tcb.svg"
         link="https://blog.royce2003.top"
       /> -->
       <Card
@@ -30,7 +30,7 @@
         backgroundColor="#24292E"
         description="📦 My repositories"
         textColor="#FFFFFF"
-        icon="github.png"
+        icon="github.svg"
         link="https://github.com/royce003"
       />
     </div>

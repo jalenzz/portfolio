@@ -38,7 +38,7 @@
       <div id="footer-text">
         <center>
         <p id="footer-copyright">©{{ getYear() }} Royce | <a style="text-decoration: none;" href="http://beian.miit.gov.cn/" target="_blank">闽ICP备20005437号-1</a></p>
-        <a href="https://github.com/spencerwooo/portfolio" target="_blank"><img style="height: 70px" src="/copyright.png" alt="copyright"/></a>
+        <a href="https://github.com/spencerwooo/portfolio" target="_blank"><img style="height: 70px" src="/copyright.svg" alt="copyright"/></a>
         </center>
       </div>
     </div>
