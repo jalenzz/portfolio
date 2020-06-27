@@ -37,8 +37,8 @@
     <div id="footer">
       <div id="footer-text">
         <center>
-        <p id="footer-copyright">©{{ getYear() }} Royce | <a style="text-decoration: none;" href="http://beian.miit.gov.cn/" target="_blank">闽ICP备20005437号-1</a></p>
-        <a href="https://github.com/spencerwooo/portfolio" target="_blank"><img style="height: 70px" src="/copyright.svg" alt="copyright"/></a>
+          <p id="footer-copyright">©{{ getYear() }} Jalen Chuh | <a style="text-decoration: none;" href="http://beian.miit.gov.cn/" target="_blank">闽ICP备20005437号-1</a></p>
+          <a href="https://github.com/spencerwooo/portfolio" target="_blank"><img style="height: 60px" src="/copyright.svg" alt="copyright"/></a>
         </center>
       </div>
     </div>
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.dogedoge.com/css2?family=Roboto+Slab:wght@700&family=Sriracha&family=Noto+Sans+SC:wght@400&display=swap');
+@import url('https://fonts.dogedoge.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap');
 
 .particles {
   position: absolute;
@@ -89,13 +89,9 @@ export default {
 }
 
 * {
-  font-family: Sriracha, 'Noto Serif SC', serif, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+  font-family: Roboto Slab, 'Noto Serif SC', serif, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
   Arial, pingfang sc, source han sans sc, noto sans cjk sc, sarasa gothic sc,
   microsoft yahei, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-}
-
-h1, h2, h3 {
-  font-family: 'Roboto Slab';
 }
 
 html,
@@ -132,9 +128,9 @@ body {
 }
 
 #main-navbar,
-#main-navbar .link a {
+#main-navbar .link a,
+#main-navbar .button-github {
   font-weight: 700;
-  font-family: 'Roboto Slab';
 }
 
 #main-navbar .button-github {
@@ -143,7 +139,6 @@ body {
   border: 1.5px solid #0070F3;
   /* border-radius: 50px; */
   transition: 0.3s;
-  font-family: 'Roboto Slab';
 }
 
 #main-navbar .button-github:hover {
@@ -216,8 +211,10 @@ hr {
 }
 
 p,
+ul,
+li,
 span {
-  color: #666666;
+  color: #555555;
 }
 
 #top-hr {

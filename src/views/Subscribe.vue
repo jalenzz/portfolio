@@ -24,7 +24,7 @@
       />
 
       <h2>End</h2>
-      <p>Thank you for your attention! Your support is my biggest motivation for updating.</p>
+      <p>Thank you for your follow! Your support is my biggest motivation to update.</p>
       <p>Big brother drink Coca Cola. 🍻</p>
 
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <img id="avatar" alt="avatar" src="https://rmt.dogedoge.com/fetch/royce/storage/royce.png?fmt=webp" />
-    <h1>Royce</h1>
+    <h1>Jalen Chuh</h1>
     <h2>👨‍🎨 👨‍💻</h2>
 
     <p>Student /  OIer</p>

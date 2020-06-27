@@ -6,16 +6,31 @@
 
     <hr id="top-hr" />
     <div class="article">
-      <h2>Me</h2>
-      <p>
-        Hi, I'm Royce, a student in an unknow high school. Freshmen.<br>
-        Love new things and emoji! 🤪
-      </p>
-      <p>
-        Thanks for coming. 🙇
-      </p>
+      <h2>About Me</h2>
+        <ul>
+        <li>Hi, I'm JalenChuh(Royce), a student in an unknow high school. Freshmen.</li>
+        <li>My favorite</li>
+          <ul>
+            <li>Sport: 🏓</li>
+            <li>Color: #FF779A</li>
+            <li>OS: iOS(never used MacOS😭)</li>
+            <li>{ } Line break: Yes! 🍻</li>
+            <li>Editor: VS Code</li>
+            <li>Emoji: Microsoft</li>
+            <li>Serif font: Noto Serif SC, Roboto Slab</li>
+            <li>Monospaced font: Cascadia Code, Fira Code</li>
+            <li>
+              Tab:
+                <ul>
+                  <li>2 space in coding</li>
+                  <li>4 space in OI</li>
+                </ul>
+            </li>
+          </ul>
+        </ul>
+        <p>Thanks for coming. 🙇</p>
 
-      <h2>My project</h2>
+      <h2>My Project</h2>
       <p>
         Almost all projects(now, only one) I have done are open source on
         <a href="https://github.com/royce003" target="_blank">GitHub</a>
@@ -52,12 +67,14 @@
       <h2>Contact</h2>
       <ul>
         <li>📍 Fujian, China</li>
-        <li>📫 Email: royce2003[AT]qq.com</li>
+        <li>📫 Email: JalenChuh[AT]gmail.com</li>
         <li>📝 leave messages: <a href="https://royce2003.top/messageboard/" target="_blank">message board</a></li>
       </ul>
     <p>
-      至于为什么全站英文呢？闲着无聊呗😜<br>
-      我的翻译，别人肯定看得懂，全是普通词汇🤣
+      至于为什么全站英文呢？<br>
+      闲着无聊😜而且我这翻译都看得懂🤣<br>
+      就这就这？就这！<br>
+      <b>🚨 求助，大括号换行应该怎么翻译！</b>
     </p>
     </div>
   </div>
