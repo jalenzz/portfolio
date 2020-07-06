@@ -61,7 +61,7 @@ export default {
           {
             type: 'button',
             text: '🌟 FOLLOW ME ON GITHUB',
-            path: 'https://github.com/royce003',
+            path: 'https://github.com/JalenChuh',
             class: 'button-github',
           },
         ],

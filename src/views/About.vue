@@ -8,7 +8,7 @@
     <div class="article">
       <h2>About Me</h2>
         <ul>
-        <li>Hi, I'm JalenChuh(Royce), a student in an unknow high school. Freshmen.</li>
+        <li>Hi, I'm JalenChuh, a student in an unknow high school. Freshmen.</li>
         <li>My favorite</li>
           <ul>
             <li>Sport: 🏓</li>
@@ -32,20 +32,39 @@
 
       <h2>My Project</h2>
       <p>
-        Almost all projects(now, only one) I have done are open source on
-        <a href="https://github.com/royce003" target="_blank">GitHub</a>
+        Almost all projects I have done are open source on
+        <a href="https://github.com/JalenChuh" target="_blank">GitHub</a>
         , weclcome star and follow.
       </p>
-
       <GitHubCard
         title="🔥 Tank War"
-        link="https://github.com/royce003/tankwar"
-        :info="tankwarinfo"
+        link="https://github.com/JalenChuh/tankwar"
+        :info="tankwarInfo"
         :loading="loading"
       >
         <p>
           A tank war writted by Kotlin. Yes, it's that you palyed in 4399 when you are a kid.<br>
           base on: <a href="https://github.com/xiaoqisz/kotlinGameEngine" target="_blank">kotlinGameEngine:v0.0.4</a>
+        </p>
+      </GitHubCard>
+      <GitHubCard
+        title="💄 Portfolio"
+        link="https://github.com/JalenChuh/homepage"
+        :info="portfolioInfo"
+        :loading="loading"
+      >
+        <p>
+          My home page. Design by: <a href="https://spencerwoo.com/" target="_blank">@SpencerWoo</a>
+        </p>
+      </GitHubCard>
+      <GitHubCard
+        title="🍻 Blog"
+        link="https://blog.JalenChuh.cn"
+        :info="blogInfo"
+        :loading="loading"
+      >
+        <p>
+          My blog. Powered by Hexo. Theme - Cards
         </p>
       </GitHubCard>
 
@@ -68,14 +87,14 @@
       <ul>
         <li>📍 Fujian, China</li>
         <li>📫 Email: JalenChuh[AT]gmail.com</li>
-        <li>📝 leave messages: <a href="https://royce2003.top/messageboard/" target="_blank">message board</a></li>
+        <li>📝 leave messages: <a href="https://blog.JalenChuh.cn/about/" target="_blank">Guestbook</a></li>
       </ul>
-    <p>
+    <!-- <p>
       至于为什么全站英文呢？<br>
       闲着无聊😜而且我这翻译都看得懂🤣<br>
       就这就这？就这！<br>
       <b>🚨 求助，大括号换行应该怎么翻译！</b>
-    </p>
+    </p> -->
     </div>
   </div>
 </template>
@@ -90,23 +109,15 @@ export default {
   data() {
     return {
       loading: true,
-      dowwwInfo: {
+      tankwarInfo: {
         stargazers_count: 0,
         forks_count: 0,
       },
-      substatsInfo: {
+      portfolioInfo: {
         stargazers_count: 0,
         forks_count: 0,
       },
-      fatesInfo: {
-        stargazers_count: 0,
-        forks_count: 0,
-      },
-      sspaiCardInfo: {
-        stargazers_count: 0,
-        forks_count: 0,
-      },
-      dotfilesInfo: {
+      blogInfo: {
         stargazers_count: 0,
         forks_count: 0,
       },
@@ -115,14 +126,18 @@ export default {
   mounted() {
     const githubApiUrl = 'https://api.github.com/repos'
 
-    const tankwarAxios = this.axios.get(`${githubApiUrl}/royce003/tankwar`)
+    const tankwarAxios = this.axios.get(`${githubApiUrl}/JalenChuh/tankwar`)
+    const portfolioAxios = this.axios.get(`${githubApiUrl}/JalenChuh/homepage`)
+    const blogAxios = this.axios.get(`${githubApiUrl}/JalenChuh/blog`)
 
     this.axios
-      .all([tankwarAxios])
+      .all([tankwarAxios, portfolioAxios, blogAxios])
       .then(
         this.axios.spread((...resp) => {
           this.loading = false
-          this.tankwarinfo = resp[0].data
+          this.tankwarInfo = resp[0].data
+          this.portfolioInfo = resp[1].data
+          this.blogInfo = resp[2].data
         }),
       )
       .catch(err => {

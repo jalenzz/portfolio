@@ -17,8 +17,8 @@
         icon="bulb.svg"
         link1Tooltip="Link of my blog"
         link2Tooltip="Link of the RSS"
-        link1="https://royce2003.top/"
-        link2="https://royce2003.top/atom.xml"
+        link1="https://blog.JalenChuh.cn"
+        link2="https://blog.JalenChuh.cn/atom.xml"
         rightIcon1="bookmark.svg"
         rightIcon2="rss-blue.svg"
       />

@@ -15,23 +15,15 @@
         description="📘 My personal blog"
         textColor="#FFFFFF"
         icon="tcb.svg"
-        link="https://royce2003.top"
+        link="https://blog.JalenChuh.cn"
       />
-      <!-- <Card
-        msg="Blog2"
-        backgroundColor="#ca2c2a"
-        description="📒 without decoration"
-        textColor="#FFFFFF"
-        icon="tcb.svg"
-        link="https://blog.royce2003.top"
-      /> -->
       <Card
         msg="GitHub"
         backgroundColor="#24292E"
         description="📦 My repositories"
         textColor="#FFFFFF"
         icon="github.svg"
-        link="https://github.com/royce003"
+        link="https://github.com/JalenChuh"
       />
     </div>
   </div>
