@@ -18,6 +18,14 @@
         link="https://blog.JalenChuh.cn"
       />
       <Card
+        msg="SSPAI"
+        backgroundColor="#DA282A"
+        description="✏️ My writing platform"
+        textColor="#FFFFFF"
+        icon="sspai.svg"
+        link="https://sspai.com/u/Jalen"
+      />
+      <Card
         msg="GitHub"
         backgroundColor="#24292E"
         description="📦 My repositories"

@@ -12,13 +12,31 @@
       </p>
       <AppCard
         msg="Blog"
-        stars="⭐⭐⭐⭐⭐"
-        description="Subscribe my blog by RSS"
+        stars="⭐⭐⭐⭐"
+        description="Subscribe to my blog by RSS"
         icon="bulb.svg"
         link1Tooltip="Link of my blog"
         link2Tooltip="Link of the RSS"
         link1="https://blog.JalenChuh.cn"
         link2="https://blog.JalenChuh.cn/atom.xml"
+        rightIcon1="bookmark.svg"
+        rightIcon2="rss-blue.svg"
+      />
+
+      <h2>How to subscribe to my article on SSAPI?</h2>
+      <p>
+        With the help of RSSHub, I have generated a RSS subscribe link for my articles on SSPAI.
+        You can use the same way as you subscribe to my blog to subscribe my articles.
+      </p>
+      <AppCard
+        msg="SSPAI"
+        stars="⭐⭐⭐⭐"
+        description="Subscribe to my update by RSS"
+        icon="sspai-red.svg"
+        link1Tooltip="Link of my portfolio on SSPAI"
+        link2Tooltip="Link of the RSS"
+        link1="https://sspai.com/u/Jalen"
+        link2="https://rsshub.app/sspai/author/Jalen"
         rightIcon1="bookmark.svg"
         rightIcon2="rss-blue.svg"
       />

@@ -9,7 +9,7 @@ import axios from 'axios'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Subscribe from './views/Subscribe.vue'
-// import Stats from './views/Stats.vue'
+import Stats from './views/Stats.vue'
 import NotFound from './views/NotFound.vue'
 
 Vue.config.productionTip = false
@@ -30,7 +30,7 @@ const router = new VueRouter({
     { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/subscribe', component: Subscribe },
-    // { path: '/stats', component: Stats },
+    { path: '/stats', component: Stats },
 
     // Not found
     { path: '/*', component: NotFound }

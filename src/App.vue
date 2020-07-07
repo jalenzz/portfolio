@@ -22,11 +22,11 @@
           <router-link to="/subscribe">SUBSCRIBE</router-link>
         </div>
         <div class="link">
+          <router-link to="/stats">STATS</router-link>
+        </div>
+        <div class="link">
           <router-link to="/about">ABOUT</router-link>
         </div>
-        <!-- <div class="link">
-          <router-link to="/stats">STATS</router-link>
-        </div> -->
       </template>
     </vue-navigation-bar>
 
