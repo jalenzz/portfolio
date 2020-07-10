@@ -1,8 +1,7 @@
 <template>
   <div class="container">
-    <h1>👓</h1>
+    <h1>🍮</h1>
     <h1>About</h1>
-    <!-- <p>这人是谁啊，这么牛逼哄哄的？</p> -->
 
     <hr id="top-hr" />
     <div class="article">
