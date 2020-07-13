@@ -22,7 +22,7 @@
         description="✏️ My writing platform"
         textColor="#FFFFFF"
         icon="sspai.svg"
-        link="https://sspai.com/u/Jalen"
+        link="https://sspai.com/u/Jalen/posts"
       />
       <Card
         msg="GitHub"

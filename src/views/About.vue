@@ -58,7 +58,7 @@
       </GitHubCard>
       <GitHubCard
         title="🍻 Blog"
-        link="https://blog.JalenChuh.cn"
+        link="https://github.com/JalenChuh/blog"
         :info="blogInfo"
         :loading="loading"
       >
@@ -88,12 +88,6 @@
         <li>📫 Email: JalenChuh[AT]gmail.com</li>
         <li>📝 leave messages: <a href="https://blog.JalenChuh.cn/about/" target="_blank">Guestbook</a></li>
       </ul>
-    <!-- <p>
-      至于为什么全站英文呢？<br>
-      闲着无聊😜而且我这翻译都看得懂🤣<br>
-      就这就这？就这！<br>
-      <b>🚨 求助，大括号换行应该怎么翻译！</b>
-    </p> -->
     </div>
   </div>
 </template>
