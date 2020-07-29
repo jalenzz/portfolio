@@ -37,7 +37,7 @@
     <div id="footer">
       <div id="footer-text">
         <center>
-          <p id="footer-copyright">©{{ getYear() }} Jalen Chuh | <a style="text-decoration: none;" href="http://beian.miit.gov.cn/" target="_blank">闽ICP备20005437号-1</a></p>
+          <p id="footer-copyright">©{{ getYear() }} Jalen Chuh | <a style="text-decoration: none;" href="http://beian.miit.gov.cn/" target="_blank">闽ICP备20005437号-2</a></p>
           <a href="https://github.com/spencerwooo/portfolio" target="_blank"><img style="height: 60px" src="/copyright.svg" alt="copyright"/></a>
         </center>
       </div>
@@ -89,7 +89,7 @@ export default {
 }
 
 * {
-  font-family: Roboto Slab, 'Noto Serif SC', serif, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+  font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
   Arial, pingfang sc, source han sans sc, noto sans cjk sc, sarasa gothic sc,
   microsoft yahei, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }

@@ -11,7 +11,7 @@
       <Card
         msg="Blog"
         backgroundColor="#ff8a0f"
-        description="📘 My personal blog"
+        description="📘 Blog of me"
         textColor="#FFFFFF"
         icon="tcb.svg"
         link="https://blog.JalenChuh.cn"
@@ -27,7 +27,7 @@
       <Card
         msg="GitHub"
         backgroundColor="#24292E"
-        description="📦 My repositories"
+        description="📦 Some repositories"
         textColor="#FFFFFF"
         icon="github.svg"
         link="https://github.com/JalenChuh"

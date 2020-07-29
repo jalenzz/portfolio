@@ -54,9 +54,6 @@ export default {
   -webkit-box-shadow: 0px 10px 40px -10px var(--color-hover);
   -moz-box-shadow: 0px 10px 40px -10px var(--color-hover);
   box-shadow: 0px 10px 40px -10px var(--color-hover);
-  -webkit-transform: translateY(-1px);
-  -moz-transform: translateY(-1px);
-  transform: translateY(-1px);
 }
 
 #icon {
@@ -70,8 +67,6 @@ export default {
   font-weight: 700;
   font-size: 20px;
   text-align: left;
-  font-family: 'Miriam Libre', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, 'PingFang SC',
-    'Noto Sans CJK SC', 'Sarasa Gothic SC', 'Microsoft YaHei', sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 #title #description {
