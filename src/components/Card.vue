@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" target="_blank">
+  <a :href="link">
     <div class="card" :style="cardStyles">
       <div id="title">
         <div id="msg">{{ msg }}</div>

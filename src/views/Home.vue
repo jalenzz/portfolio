@@ -2,8 +2,7 @@
   <div class="container">
     <img id="avatar" alt="avatar" src="https://rmt.dogedoge.com/fetch/royce/storage/avatar.png?fmt=webp" />
     <h1>Jalen Chuh</h1>
-
-    <p>Student /  OIer</p>
+    <p>Student / Developer / Writer</p>
 
     <hr id="top-hr" />
     <h3>🔍 Where to find me:</h3>
@@ -11,7 +10,7 @@
       <Card
         msg="Blog"
         backgroundColor="#ff8a0f"
-        description="📘 Blog of me"
+        description="📘 My blog"
         textColor="#FFFFFF"
         icon="tcb.svg"
         link="https://blog.JalenChuh.cn"
@@ -19,7 +18,7 @@
       <Card
         msg="SSPAI"
         backgroundColor="#DA282A"
-        description="✏️ My writing platform"
+        description="✏️ I'm writing here"
         textColor="#FFFFFF"
         icon="sspai.svg"
         link="https://sspai.com/u/Jalen/posts"

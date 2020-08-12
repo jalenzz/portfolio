@@ -136,17 +136,17 @@ body {
 #main-navbar .button-github {
   background: #fafafa;
   color: #000;
-  border: 1.5px solid #FF779A;
+  border: 1.5px solid #FF7790;
   /* border-radius: 50px; */
   transition: 0.3s;
 }
 
 #main-navbar .button-github:hover {
-  background: #FF779A;
+  background: #FF7790;
   color: #ffffff;
-  -webkit-box-shadow: 0px 10px 40px -10px #FF779A;
-  -moz-box-shadow: 0px 10px 40px -10px #FF779A;
-  box-shadow: 0px 10px 40px -10px #FF779A;
+  -webkit-box-shadow: 0px 10px 40px -10px #FF7790;
+  -moz-box-shadow: 0px 10px 40px -10px #FF7790;
+  box-shadow: 0px 10px 40px -10px #FF7790;
 }
 
 .vnb__collapse-button img {
@@ -220,7 +220,7 @@ span {
 #top-hr {
   width: 100px;
   margin: 60px auto;
-  border-top: solid 3px #FF779A;
+  border-top: solid 3px #FF7790;
 }
 
 .social-media-card {
@@ -237,7 +237,7 @@ span {
 
 .container a {
   text-decoration: none;
-  color: #FF779A;
+  color: #FF7790;
 }
 
 .container a:hover {

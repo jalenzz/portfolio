@@ -7,13 +7,13 @@
     <div class="article">
       <h2>About Me</h2>
         <ul>
-        <li>Hi, I'm JalenChuh, a student in an unknow high school. Freshmen.</li>
+        <li>Hi, I'm JalenChuh, a high school student. Sophomore.</li>
         <li>My favorite</li>
           <ul>
             <li>Sport: 🏓</li>
-            <li>Color: #FF779A</li>
-            <li>OS: iOS(never used MacOS😭)</li>
-            <li>{ } Line break: Yes! 🍻</li>
+            <li >Color: <span style="color: #FF7790">#FF7790</span></li>
+            <li>OS: iOS</li>
+            <li>{ } Line break: No! 🍻</li>
             <li>Editor: VS Code</li>
             <li>Emoji: Microsoft</li>
             <li>Serif font: Noto Serif SC, Roboto Slab</li>
@@ -47,13 +47,14 @@
         </p>
       </GitHubCard>
       <GitHubCard
-        title="💄 Portfolio"
-        link="https://github.com/JalenChuh/homepage"
-        :info="portfolioInfo"
+        title="🚀 baidu-url-submit-by-using-sitemap"
+        link="https://github.com/JalenChuh/baidu-url-submit-by-using-sitemap"
+        :info="submitInfo"
         :loading="loading"
       >
         <p>
-          My home page. Design by: <a href="https://spencerwoo.com/" target="_blank">@SpencerWoo</a>
+          Automatically extract the links in the sitemap and use Baidu API to push them to <em>ziyuan.baidu.com</em>.
+
         </p>
       </GitHubCard>
       <GitHubCard
@@ -63,30 +64,15 @@
         :loading="loading"
       >
         <p>
-          My blog. Powered by Hexo. Theme - Cards
+          My blog. Powered by Gridsome. Theme - gridsome-starter-blog.
         </p>
       </GitHubCard>
-
-      <h2>My Devices</h2>
-      <ul>
-        <li>
-          HONOR MagicBook Pro
-          <ul>
-            <li>CPU: AMD Ryzen 5 3550H</li>
-            <li>RAM: 8GB (4GB×2) DDR4 2400MHz</li>
-            <li>SSD: SAMSUNG MZVLB512HAJQ-00000 512GB</li>
-          </ul>
-        </li>
-        <li>MEIZU 16th</li>
-        <li>Redmi Note 3</li>
-        <li>iPad Air 2</li>
-      </ul>
 
       <h2>Contact</h2>
       <ul>
         <li>📍 Fujian, China</li>
-        <li>📫 Email: JalenChuh[AT]gmail.com</li>
-        <li>📝 leave messages: <a href="https://blog.JalenChuh.cn/about/" target="_blank">Guestbook</a></li>
+        <li>📫 Email: <a href="javascript:location='mailto:\u006a\u0061\u006c\u0065\u006e\u0063\u0068\u0075\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0">jalenchuh[AT]gmail.com</a></li>
+        <li>📝 Guestbook: <a href="https://blog.jalenchuh.cn/about">Guestbook</a></li>
       </ul>
     </div>
   </div>
@@ -106,7 +92,7 @@ export default {
         stargazers_count: 0,
         forks_count: 0,
       },
-      portfolioInfo: {
+      submitInfo: {
         stargazers_count: 0,
         forks_count: 0,
       },
@@ -120,16 +106,16 @@ export default {
     const githubApiUrl = 'https://api.github.com/repos'
 
     const tankwarAxios = this.axios.get(`${githubApiUrl}/JalenChuh/tankwar`)
-    const portfolioAxios = this.axios.get(`${githubApiUrl}/JalenChuh/homepage`)
+    const submitAxios = this.axios.get(`${githubApiUrl}/JalenChuh/baidu-url-submit-by-using-sitemap`)
     const blogAxios = this.axios.get(`${githubApiUrl}/JalenChuh/blog`)
 
     this.axios
-      .all([tankwarAxios, portfolioAxios, blogAxios])
+      .all([tankwarAxios, submitAxios, blogAxios])
       .then(
         this.axios.spread((...resp) => {
           this.loading = false
           this.tankwarInfo = resp[0].data
-          this.portfolioInfo = resp[1].data
+          this.submitInfo = resp[1].data
           this.blogInfo = resp[2].data
         }),
       )

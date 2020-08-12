@@ -63,7 +63,7 @@ export default {
   
     const githubAxios = this.axios.get(`${apiUrl}/?source=github&queryKey=JalenChuh`)
     const sspaiAxios = this.axios.get(`${apiUrl}/?source=sspai&queryKey=Jalen`)
-    const rssAxios = this.axios.get(`${apiUrl}/?source=feedly|inoreader&queryKey=${rssUrl}`)
+    const rssAxios = this.axios.get(`${apiUrl}/?source=feedly|inoreader|feedsPub&queryKey=${rssUrl}`)
 
     this.axios
       .all([
