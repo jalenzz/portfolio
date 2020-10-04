@@ -1,0 +1,272 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%
+}
+
+body,
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  color: #7c8891;
+  font: 16px/22px -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  background: #ebedee;
+  padding: 50px;
+  overflow: hidden
+}
+
+a {
+  background-color: transparent
+}
+
+img {
+  border-style: none
+}
+
+[hidden] {
+  display: none
+}
+
+@media (max-width:768px) {
+  body {
+    padding: 30px
+  }
+}
+
+@media (max-width:420px) {
+  body {
+    padding: 10px
+  }
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 24px
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%
+}
+
+.container {
+  opacity: 0;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -o-transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  transform: translateY(-40px);
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 700px;
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .06)
+}
+
+@media (max-width:768px) {
+  .container {
+    width: 100%;
+    min-width: 290px
+  }
+}
+
+.container>div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 55px 34px
+}
+
+@media (max-width:420px) {
+  .container>div {
+    padding: 40px 24.7px!important
+  }
+}
+
+.profile {
+  position: absolute;
+  text-align: center;
+  width: 31.2%;
+  color: #fff;
+  background: rgba(48, 55, 66, .6);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .6)
+}
+
+@media (min-width:671px) {
+  .profile {
+    height: 100%
+  }
+}
+
+.profile .meta {
+  position: relative;
+  z-index: 1
+}
+
+.profile .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .3)));
+  background: -o-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3))
+}
+
+.profile .avatar {
+  width: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5)
+}
+
+.profile .position {
+  font-size: 13px
+}
+
+.portfolio {
+  margin-left: 31.2%;
+  padding: 50px
+}
+
+.portfolio p {
+  margin-top: 0;
+  line-height: 28px
+}
+
+.portfolio a {
+  color: #0070ff;
+  text-decoration: none
+}
+
+.tooltip {
+  position: relative
+}
+
+.tooltip:focus::after,
+.tooltip:hover::after {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -.2rem);
+  -ms-transform: translate(-50%, -.2rem);
+  transform: translate(-50%, -.2rem)
+}
+
+.tooltip::after {
+  background: rgba(48, 55, 66, .6);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fafafa;
+  content: attr(title);
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  max-width: 300px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 3px 6px;
+  pointer-events: none;
+  position: absolute;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-transform: translate(-50%, .4rem);
+  -ms-transform: translate(-50%, .4rem);
+  transform: translate(-50%, .4rem);
+  -webkit-transition: opacity .2s, -webkit-transform .2s;
+  transition: opacity .2s, -webkit-transform .2s;
+  -o-transition: opacity .2s, transform .2s;
+  transition: opacity .2s, transform .2s;
+  transition: opacity .2s, transform .2s, -webkit-transform .2s;
+  white-space: pre;
+  z-index: 300;
+  left: 50%;
+  bottom: auto;
+  top: 100%
+}
+
+.social {
+  padding-top: 20px;
+  text-align: center
+}
+
+.social i {
+  margin: 0 10px
+}
+
+.social a {
+  color: #7c8891
+}
+
+@media (max-width:670px) {
+  .profile {
+    position: relative;
+    width: 100%;
+    background-size: cover
+  }
+  .profile h1 {
+    font-size: 20px;
+    margin-bottom: 5px
+  }
+  .avatar {
+    width: 80px!important
+  }
+  .portfolio {
+    margin: 0
+  }
+}
+
+.icp {
+  text-align: center
+}
+
+.icp a {
+  color: #7c8891;
+  text-decoration: none;
+  opacity: .6;
+  cursor: text
+}
+
+.text-center {
+  text-align: center
+}
+
+.fadeIn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0)
+}

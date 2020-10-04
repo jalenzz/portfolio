@@ -1,9 +1,6 @@
 name: Deploy
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   build:
@@ -16,13 +13,10 @@ jobs:
         node-version: '10.x'
 
     - name: Setup
-      run: npm install
+      run: yarn install
 
-    - name: Build
-      run: npm run build
-
-    - name: Lint
-      run: npm run lint
+    - name: Gulp
+      run: yarn gulp
 
     - name: Deploy
       id: deployStatic
