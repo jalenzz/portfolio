@@ -249,6 +249,21 @@ h1 {
   }
 }
 
+.footer {
+  color: #bfc4c7;
+  padding: 20px 0;
+}
+
+.label {
+  font-size: 13px;
+  padding: 4px 8px;
+  color: rgb(229, 227, 224);
+  background-color: rgba(0, 0, 0, .6);
+  text-decoration: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
 .icp {
   text-align: center
 }
