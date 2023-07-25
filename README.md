@@ -1,7 +1,5 @@
 # portfolio
 
-Live at: [jalenchuh.cn](https://jalenchuh.cn/)
-
 Base on: [skk.moe](https://skk.moe/)
 
 ## Install
